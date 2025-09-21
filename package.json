@@ -11,10 +11,13 @@
     "prettier": "prettier --write \"src/**/*\""
   },
   "dependencies": {
+    "@testing-library/react": "^16.3.0",
+    "jsdom": "^27.0.0",
     "prettier": "^3.6.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "vite-plugin-checker": "^0.10.3"
+    "vite-plugin-checker": "^0.10.3",
+    "vitest": "^3.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
