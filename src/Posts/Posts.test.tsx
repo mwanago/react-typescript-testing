@@ -35,4 +35,15 @@ describe('The Posts component', () => {
       }
     });
   });
+  describe('when fetching posts fail', () => {
+    beforeEach(() => {
+      (fetchPosts as Mock).mockRejectedValue(new Error('Something went wrong'));
+    });
+    it('should display an error', async () => {
+      const { findByText } = render(<Posts />);
+
+      const errorMessage = await findByText('There was an error');
+      expect(errorMessage).toBeDefined();
+    });
+  });
 });
