@@ -2,7 +2,7 @@ import type { FunctionComponent } from 'react';
 
 interface Props {
   name: string;
-  age: number;
+  age?: number;
 }
 
 export const UserCard: FunctionComponent<Props> = ({ name, age }) => {
